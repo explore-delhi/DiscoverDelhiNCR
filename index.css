@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  max-width: 1536px; /* or 960px, 720px based on your preference */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main {
+  width: 100%;
+  min-height: 730px;
+  max-height: 800px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background: #e1f2ff;
+}
+
+
+
+.image {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 23% 40% 23%;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+
+.image > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+ 
+}
+.image div:nth-child(2) {
+  align-items: center;
+  justify-content: center;
+}
+
+.image img {
+  width: 100%;
+  /* height: auto; */
+  object-fit: cover;
+  display: block;
+  max-width: 100%;
+}
+
+
+
+.text-cont {
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.heading {
+  font-size: 80px;
+  font-weight: bold;
+  color: #2a5d9f;
+}
+
+.subtext {
+  font-size: 24px;
+  color: #444;
+  max-width: 700px;
+}
+
+/*  middle container */
+
+.middle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.info-card {
+  background-color: #ffffff;
+  width: 320px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* footer */
+.footer {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   background: #e1f2ff;
+;
+}
+
+.footer p{
+    font-size: 18px;
+    color: #0E0F0F;
+}
+
